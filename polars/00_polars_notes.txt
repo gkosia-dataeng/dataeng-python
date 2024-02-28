@@ -1,0 +1,8 @@
+Pandas leverage numpy
+
+Polars leverage rust and library arrow
+Arrow is an inmemory representation of the data
+PyArrow support micro level operations like multicore 
+
+In polars there is no Index in dataframe
+Polars does not have hierarchical columns (multi array columns)
