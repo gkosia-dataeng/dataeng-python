@@ -1,3 +1,4 @@
+Its multi-threaded query engine is written in Rust
 Pandas leverage numpy
 
 Polars leverage rust and library arrow
@@ -6,3 +7,6 @@ PyArrow support micro level operations like multicore
 
 In polars there is no Index in dataframe
 Polars does not have hierarchical columns (multi array columns)
+
+Prefer to use expressions instead working on dataframe
+With expressions we are on rust level and with dataframe on python lervel (more slow)

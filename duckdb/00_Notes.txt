@@ -1,0 +1,11 @@
+Its an opensource columnstore in-memory db
+Its in-process db: running in the process that trying to accessing from (script/notebook)
+Can persist the data to disk
+DuckDB has APIs like Python,R,Java and support integrations with Pandas, Arrow,Parquet
+
+Limits:
+    Run on a single machine
+    Can process data biger than memory
+    Only one process can access the duckdb on the same time
+    It is not support transactions
+    Concurent connections should be Read-Only
