@@ -3,3 +3,8 @@ numpy
 pandas
 duckdb
 pyarrow
+python-dotenv
+Faker
+modin
+pyyaml
+docopt
