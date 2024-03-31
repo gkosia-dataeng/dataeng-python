@@ -1,0 +1,9 @@
+Packages:
+    A package is a folder of modules
+    A module is a file of objects or methods
+    
+    import package_name
+    import module_name
+    from module_name import function
+    from package import module
+    from package.module import function
