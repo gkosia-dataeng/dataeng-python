@@ -8,3 +8,4 @@ Faker
 modin
 pyyaml
 docopt
+matplotlib
