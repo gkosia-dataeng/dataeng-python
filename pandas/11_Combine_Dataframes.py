@@ -11,3 +11,6 @@ pd.concat([df1,df2],axis=0)
 df_merge = pd.merge(
             df_c, df_l, how="left", left_on="user_id", right_on="user_id"
         )
+
+# append rows to other df
+df.append(df2)
