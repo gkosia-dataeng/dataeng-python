@@ -11,6 +11,8 @@ df.groupby('Type 1',as_index=False).agg({
      'HP': max
     ,'Attack': sum
 }).head(10)
+
+
 # %%
 # aggregate with rename 
 df.groupby('Type 1',as_index=False).agg(

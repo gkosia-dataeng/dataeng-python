@@ -32,7 +32,11 @@ df.sort_values(["Type 1", "Type 2"],ascending=[False,False])
 
 # %%
 # is not inplace function
+# drop columns
 df.drop(["Type 1", "Type 2"],axis=1).columns
+#drop rows
+df.drop(df[0:3].index, axis=0).head(3)
+
 
 # %%
 # Conditional update
@@ -53,7 +57,7 @@ df["half_attack"] = df["Attack"].map(devide_attack)
 df[["half_attack", "Attack"]]
 # %%
 
-# Apply a function to a row
+# Apply a function to a row, can use map or apply
 def process_row(row):
     return row.Attack + row.half_attack
 
@@ -61,3 +65,10 @@ df["attack_plus"] = df.apply(lambda x: process_row(x),axis=1)
 
 df[["Attack", "half_attack", "attack_plus"]]
 # %%
+
+
+# duplicates
+
+df.duplicated() # return two columns, first is the index, second is the boolean value if is duplicated
+df.drop_duplicates(subset=["Type 1"], keep="first") # keep first or last
+

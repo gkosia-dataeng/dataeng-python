@@ -2,8 +2,12 @@ Packages:
     A package is a folder of modules
     A module is a file of objects or methods
     
+
+package_name/
+    __init__.py
+    module1.py
+    module2.py
+
     import package_name
-    import module_name
-    from module_name import function
-    from package import module
-    from package.module import function
+    from package_name import module1,module2
+    from package_name.module2 import function2
