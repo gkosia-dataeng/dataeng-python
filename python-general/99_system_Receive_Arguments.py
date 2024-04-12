@@ -17,3 +17,4 @@ if __name__ == '__main__':
     args = docopt(__doc__)
     date = args['--date']
     print(f"Passed date {date}")
+

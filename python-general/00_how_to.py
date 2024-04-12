@@ -11,3 +11,10 @@ import time
 start_time  = time.time()
 time.sleep(10)
 print("--- %s seconds ---" % (time.time() - start_time))
+
+# get ascii of char
+print(ord("A")) #65
+
+
+# format numbers
+print("{:,}".format(1000000))
