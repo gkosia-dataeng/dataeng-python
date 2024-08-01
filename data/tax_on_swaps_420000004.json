@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 0,
+    "timestamp": 1721337301264,
+    "headers": null,
+    "key": "DX_ld_420000004",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-RZ-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 16,
+      "dealID": "3464652",
+      "taxAmount": 4,
+      "login": 420000004,
+      "comment": "Swap transfer for account 420000004, position 1569272 EURGBP on Jul 18, 2024: 0.16 EUR (Short 10000, SwapRate=0.14, InterestRate=0, Conv. Rate=1.18789 converted from 0.14 GBP)",
+      "executionTimestamp": 1721336400000
+    }
+  },
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 1,
+    "timestamp": 1721337301264,
+    "headers": null,
+    "key": "DX_ld_420000004",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-RZ-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 14,
+      "dealID": "3464651",
+      "taxAmount": 4,
+      "login": 420000004,
+      "comment": "Swap transfer for account 420000004, position 1569239 EURJPY on Jul 18, 2024: 0.14 EUR (Long 5000, SwapRate=-0.51, InterestRate=0, Conv. Rate=0.00584 converted from 25 JPY)",
+      "executionTimestamp": 1721336400000
+    }
+  },
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 2,
+    "timestamp": 1721337301262,
+    "headers": null,
+    "key": "DX_ld_420000009",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-SD-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 2,
+      "dealID": "3464455",
+      "taxAmount": 1,
+      "login": 420000009,
+      "comment": "Swap transfer for account 420000009, position 1549855 EURJPY on Jul 18, 2024: 0.02 EUR (Long 1000, SwapRate=-0.51, InterestRate=0, Conv. Rate=0.00584 converted from 5 JPY)",
+      "executionTimestamp": 1721336400000
+    }
+  },
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 3,
+    "timestamp": 1721423701253,
+    "headers": null,
+    "key": "DX_ld_420000009",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-SD-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 3,
+      "dealID": "3501994",
+      "taxAmount": 1,
+      "login": 420000009,
+      "comment": "Swap transfer for account 420000009, position 1549855 EURJPY on Jul 19, 2024: 0.03 EUR (Long 1000, SwapRate=-0.52, InterestRate=0, Conv. Rate=0.00584 converted from 5 JPY)",
+      "executionTimestamp": 1721422800000
+    }
+  },
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 4,
+    "timestamp": 1721423701255,
+    "headers": null,
+    "key": "DX_ld_420000004",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-RZ-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 15,
+      "dealID": "3502196",
+      "taxAmount": 4,
+      "login": 420000004,
+      "comment": "Swap transfer for account 420000004, position 1569239 EURJPY on Jul 19, 2024: 0.15 EUR (Long 5000, SwapRate=-0.52, InterestRate=0, Conv. Rate=0.00584 converted from 26 JPY)",
+      "executionTimestamp": 1721422800000
+    }
+  },
+  {
+    "topic": "tax-withholding-transactions-dryrun",
+    "partition": 1,
+    "offset": 5,
+    "timestamp": 1721423701255,
+    "headers": null,
+    "key": "DX_ld_420000004",
+    "value": {
+      "server": "DX_ld",
+      "group": "EUR-TS-RZ-TST-X",
+      "currency": "EUR",
+      "transactionID": "",
+      "amount": 16,
+      "dealID": "3502197",
+      "taxAmount": 4,
+      "login": 420000004,
+      "comment": "Swap transfer for account 420000004, position 1569272 EURGBP on Jul 19, 2024: 0.16 EUR (Short 10000, SwapRate=0.14, InterestRate=0, Conv. Rate=1.1865 converted from 0.14 GBP)",
+      "executionTimestamp": 1721422800000
+    }
+  }
+]
