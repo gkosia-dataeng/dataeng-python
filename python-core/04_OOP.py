@@ -82,11 +82,11 @@ person2.say_gender()
 
 
 # Abstract classes: we cannot create instances of abstract class, when we inherit we have to implement these classes
-from abc import abstractclassmethod
+from abc import abstractmethod
 from typing import Any
 
 class Shape:
-    @abstractclassmethod
+    @abstractmethod
     def what_shape(self):
         pass
 
