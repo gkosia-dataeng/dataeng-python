@@ -1,0 +1,12 @@
+Abstract classes: ensure the derived classes implement particular methods
+                  Cannot create instant of base class
+
+
+Shallow vs deep copy: shallow (a=b) points to same values, copy.deepcopy create new instances
+
+Class variables vs Instance variables:
+    Class variables: belong to the class, not to the instance
+                     all instances see the same variable (self.)
+
+    Instance variable: belong to each instance
+                       can accessed using the class name

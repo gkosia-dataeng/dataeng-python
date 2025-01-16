@@ -1,0 +1,23 @@
+poetry: used to manage dependencies, create virtual environments
+
+pyproject.toml: contains the environment configuration
+
+                tool.poetry: information about the project
+                tool.poetry.dependencies: dependencies
+                build-system
+
+poetry.lock: its managed from poetry, to keep track the dependencies
+
+
+Commands:
+    poetry config virtualenvs.in-project true: set the virtual env location in project folder
+    poetry inti: initiate a poetry project in the folder (creates the pyproject.toml)
+    poetry add pytest: will install pytest module and also add it to the pyproject.toml as dependency (poetry add pytest@2.1.1 for specific version, ^ up to the latest minor version (not 3.x.x), ~ up to the latest minor version (not 2.2.X) )
+    poetry show: see the installed packages and its version
+    poetry remove pytest: will unistall and remove the module from pyproject.toml 
+    poetry install: installing all dependencies
+    poetry shell: create a new virtual environment and activate it
+                  pip install poetry-plugin-shell
+    poetry publish: package and publish the project to pypi
+    poetry env info: get information about virtual env
+    poetry env list: list all available virtual envs

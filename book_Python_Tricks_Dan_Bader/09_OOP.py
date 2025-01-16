@@ -10,7 +10,7 @@ print(b)
 c = list(a)
 print(c)
 
-print(a==c)   # true if two objects referenced bythe variables have the same content
+print(a==c)   # true if two objects referenced by the variables have the same content
 print(a is c) # true if two variables point to the same object
 
 
@@ -79,5 +79,68 @@ print(c)  ## c will not show 99 at this position because its a deep copy, all le
 
 
 
-4.5 Abstract Base Classes Keep
-Inheritance in Check
+# Absctract classes 
+# Using the abc we are getting error in case a class not implement all abstract methods and we try to initialize an instace
+from abc import ABC, abstractmethod
+
+class Base(ABC):
+    @abstractmethod
+    def foo(self):
+        pass
+    
+    @abstractmethod
+    def bar(self):
+        pass
+
+class Concrete(Base):
+    def foo(self):
+        pass
+
+# uncomment to see the error
+#c = Concrete()
+
+
+
+# nametuples: tuples with string indexes
+# nametuples implemented as regular classes so we can inherit from them and create subclasses
+from collections import namedtuple
+
+Person = namedtuple("Person", ["name", "age"])
+p = Person("gab", 34)
+print(f"name: {p.name}, age: {p[1]}")
+
+class Boy(Person):
+    pass
+
+b = Boy('b',18)
+print(f"name: {b.name}, age: {b.age}")
+
+# nametuple helper functions
+print(b._asdict())
+
+
+# Class methods, instance methods, static methods
+
+class MyMethodsClass:
+
+    def inst_method(self):
+        # self is a pointer to the specific instance when called
+        # can access class methods and variables by self.__class__
+        return "Instance methods called",self
+
+    @classmethod
+    def class_method(cls):
+        # cls is a pointer to the class
+        return "Class method callad", cls
+    
+    @staticmethod
+    def static_method():
+        # cannot modify instance of calss state
+        return "Static method called"
+    
+
+obj = MyMethodsClass()
+print(obj.inst_method())
+print(obj.class_method())
+print(obj.static_method())
+print(MyMethodsClass.static_method())
