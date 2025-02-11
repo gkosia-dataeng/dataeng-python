@@ -9,3 +9,5 @@ modin
 pyyaml
 docopt
 matplotlib
+pytest
+pytest-cov
