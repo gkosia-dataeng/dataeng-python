@@ -1,0 +1,4 @@
+env: "prod"
+server:
+  name: "server-a"
+  addr: "localhost"
