@@ -1,2 +1,8 @@
 {
+  "python.analysis.exclude": [
+    "**/.venv",
+    "**/build",
+    "**/dist",
+    "**/__pycache__"
+  ]
 }
