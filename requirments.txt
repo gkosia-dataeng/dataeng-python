@@ -11,3 +11,4 @@ docopt
 matplotlib
 pytest
 pytest-cov
+mypy
