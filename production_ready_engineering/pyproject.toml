@@ -1,0 +1,38 @@
+[project]
+name = "production_ready_engineering"
+version = "0.1.0"
+description = "This is a project that demostrates the best practices in software engineering"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "basedpyright>=1.37.2",
+    "docopt>=0.6.2",
+    "faker>=40.1.2",
+    "mypy>=1.19.1",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.12.0",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "ruff>=0.14.14",
+    "typer>=0.21.1",
+]
+
+
+[tool.mypy]
+python_version = 3.11
+ignore_missing_imports = true
+strict = true
+
+
+[tool.coverage.run]
+omit = ["*/tests/*", "*/test_*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "./src"
+]
