@@ -30,9 +30,3 @@ omit = ["*/tests/*", "*/test_*"]
 [tool.coverage.report]
 show_missing = true
 skip_covered = false
-
-
-[tool.pytest.ini_options]
-pythonpath = [
-  "./src"
-]

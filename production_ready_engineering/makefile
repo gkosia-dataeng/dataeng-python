@@ -11,7 +11,7 @@ type-check: ##
 	@uv run mypy  --strict .
 
 tests-check: ##
-	@uv run pytest tests -v
+	@uv run -m pytest tests -v
 
 cov-check: ##
-	@uv run pytest tests --cov
+	@uv run -m pytest tests --cov
