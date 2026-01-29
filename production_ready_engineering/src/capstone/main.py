@@ -1,7 +1,7 @@
 import typer
 import logging
-from src.config.config import Config
-from src.producer.producer import produce_data
+from capstone.config.config import Config
+from capstone.producer.producer import produce_data
 
 
 app = typer.Typer()

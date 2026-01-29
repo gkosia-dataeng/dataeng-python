@@ -1,3 +1,10 @@
+How to run it:
+      producer: uv run python -m capstone.main producer --num-of-events 20
+      etl:      uv run python -m capstone.main etl
+
+
+
+
 # Development Workflow Overview
 
 ## Using `uv` as the Package Manager
@@ -57,21 +64,6 @@
 - Checks that **type hints** are correct and complete (input parameters, return types).  
 - Linter does **not** cover this functionality.  
 
----
-
-## Using `pytest`
-
-- **Python searches for modules in**:
-    1. Current directory of the script  
-    2. Paths in `PYTHONPATH`  
-    3. Standard library and site-packages
-
-- **Issue with repo structure**:  
-  From the `tests/` folder, the `src/` folder may not be visible.  
-
-- **Solution**: Append `src/` to `PYTHONPATH`:
-
-      export PYTHONPATH=$PYTHONPATH:$(pwd)/src
 
 ---
 

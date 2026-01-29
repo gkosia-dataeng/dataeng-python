@@ -1,5 +1,5 @@
-from src.producer import producer 
-from src.models.events import Event
+from capstone.producer import producer 
+from capstone.models.events import Event
 from pydantic import ValidationError
 from faker import Faker
 

@@ -1,6 +1,5 @@
 .venv
 *.csv
-*.env
 *pytest_cache*
 *__pycache__*
 *_cache
