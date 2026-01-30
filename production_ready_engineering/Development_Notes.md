@@ -1,6 +1,5 @@
 How to run it:
-      producer: uv run python -m capstone.main producer --num-of-events 20
-      etl:      uv run python -m capstone.main etl
+      
 
 
 
@@ -21,9 +20,10 @@ How to run it:
       uv add pydantic
 - **Remove a package**:  
       uv remove pydantic
-- **Run a script**:  
-      uv run ./src/main.py
-- **Create a venv with all dependencies from the `.toml`**:  
+- **Run the scripts**:  
+      producer: `uv run python -m capstone.main producer --num-of-events 20` \
+      etl:      `uv run python -m capstone.main etl`
+- **Match the venv with all dependencies from the `.toml`**:  
       uv sync
 - **Initiate a lock file**:  
       uv lock
@@ -80,9 +80,11 @@ How to run it:
 
       To load the configuration of the app in a type safe way we are using pydantic_settings
       BaseSettings object will look on the attributes of the object and will map them on the .env file
+      Using SettingsConfigDict we can define custom logic on configuration like:
+            env_prefix: group params from .env base on prefix
+            env_file: set a custom path for .env
 
-
-## Using typer to manage input arguments:
+## Using typer to create the app as cli:
 
       Typer is a module that allows to build cli applications in python
       The first argument is a command and then subcommand or other arguments can be followed
@@ -91,4 +93,4 @@ How to run it:
 
       Input parameters of commands:
             num_of_events: int                                                            => positional required argument (main.py producer 20)
-            num_of_events: int = typer.Option(..., help="Number of events to produce")    => named option (--num_of_events 20)
+            num_of_events: int = typer.Option(..., help="Number of events to produce")    => named option (main.py --num_of_events 20)

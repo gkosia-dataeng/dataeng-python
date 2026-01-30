@@ -2,6 +2,7 @@ import typer
 import logging
 from capstone.config.config import Config
 from capstone.producer.producer import produce_data
+from capstone.pipeline.event_processor import Pipeline 
 
 
 app = typer.Typer()
@@ -23,6 +24,11 @@ def etl(ctx: typer.Context)-> None:
         Data are ingested from config.DATA_PATH, validated and transformed and written in config.DB_PATH database
     '''
     logging.debug("Starting ETL process...")
+    settings = ctx.obj
+
+    pipe: Pipeline  = Pipeline(settings.DATA_PATH)
+    pipe.run()
+
     
 
 @app.callback()
